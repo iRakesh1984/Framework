@@ -14,6 +14,12 @@
 		465F54441BC1A23200D65E6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 465F54421BC1A23200D65E6D /* LaunchScreen.storyboard */; };
 		465F544F1BC1A23300D65E6D /* FrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F544E1BC1A23300D65E6D /* FrameworkTests.swift */; };
 		465F545A1BC1A23300D65E6D /* FrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F54591BC1A23300D65E6D /* FrameworkUITests.swift */; };
+		46CA0CF21BC1A41F00C9B0D2 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA0CEE1BC1A41F00C9B0D2 /* LoaderView.swift */; settings = {ASSET_TAGS = (); }; };
+		46CA0CF31BC1A41F00C9B0D2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA0CEF1BC1A41F00C9B0D2 /* Menu.swift */; settings = {ASSET_TAGS = (); }; };
+		46CA0CF41BC1A41F00C9B0D2 /* RadialProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA0CF01BC1A41F00C9B0D2 /* RadialProgressView.swift */; settings = {ASSET_TAGS = (); }; };
+		46CA0CF51BC1A41F00C9B0D2 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA0CF11BC1A41F00C9B0D2 /* StarView.swift */; settings = {ASSET_TAGS = (); }; };
+		46CA0CF71BC1A44300C9B0D2 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CA0CF61BC1A44300C9B0D2 /* lock.png */; settings = {ASSET_TAGS = (); }; };
+		46CA0CF91BC1A55D00C9B0D2 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CA0CF81BC1A55D00C9B0D2 /* 11.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		465F54551BC1A23300D65E6D /* FrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		465F54591BC1A23300D65E6D /* FrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkUITests.swift; sourceTree = "<group>"; };
 		465F545B1BC1A23300D65E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CA0CEE1BC1A41F00C9B0D2 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		46CA0CEF1BC1A41F00C9B0D2 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		46CA0CF01BC1A41F00C9B0D2 /* RadialProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialProgressView.swift; sourceTree = "<group>"; };
+		46CA0CF11BC1A41F00C9B0D2 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		46CA0CF61BC1A44300C9B0D2 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
+		46CA0CF81BC1A55D00C9B0D2 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,9 @@
 		465F54381BC1A23200D65E6D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				46CA0CF61BC1A44300C9B0D2 /* lock.png */,
+				46CA0CF81BC1A55D00C9B0D2 /* 11.png */,
+				46CA0CED1BC1A41F00C9B0D2 /* Custom View */,
 				465F54391BC1A23200D65E6D /* AppDelegate.swift */,
 				465F543B1BC1A23200D65E6D /* ViewController.swift */,
 				465F543D1BC1A23200D65E6D /* Main.storyboard */,
@@ -123,6 +138,17 @@
 				465F545B1BC1A23300D65E6D /* Info.plist */,
 			);
 			path = FrameworkUITests;
+			sourceTree = "<group>";
+		};
+		46CA0CED1BC1A41F00C9B0D2 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				46CA0CEE1BC1A41F00C9B0D2 /* LoaderView.swift */,
+				46CA0CEF1BC1A41F00C9B0D2 /* Menu.swift */,
+				46CA0CF01BC1A41F00C9B0D2 /* RadialProgressView.swift */,
+				46CA0CF11BC1A41F00C9B0D2 /* StarView.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CA0CF91BC1A55D00C9B0D2 /* 11.png in Resources */,
+				46CA0CF71BC1A44300C9B0D2 /* lock.png in Resources */,
 				465F54441BC1A23200D65E6D /* LaunchScreen.storyboard in Resources */,
 				465F54411BC1A23200D65E6D /* Assets.xcassets in Resources */,
 				465F543F1BC1A23200D65E6D /* Main.storyboard in Resources */,
@@ -255,8 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CA0CF51BC1A41F00C9B0D2 /* StarView.swift in Sources */,
+				46CA0CF41BC1A41F00C9B0D2 /* RadialProgressView.swift in Sources */,
 				465F543C1BC1A23200D65E6D /* ViewController.swift in Sources */,
 				465F543A1BC1A23200D65E6D /* AppDelegate.swift in Sources */,
+				46CA0CF31BC1A41F00C9B0D2 /* Menu.swift in Sources */,
+				46CA0CF21BC1A41F00C9B0D2 /* LoaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +515,7 @@
 				465F54601BC1A23300D65E6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		465F54611BC1A23300D65E6D /* Build configuration list for PBXNativeTarget "FrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +524,7 @@
 				465F54631BC1A23300D65E6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		465F54641BC1A23300D65E6D /* Build configuration list for PBXNativeTarget "FrameworkUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +533,7 @@
 				465F54661BC1A23300D65E6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
