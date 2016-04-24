@@ -1,15 +1,14 @@
 //
-//  FrameworkTests.swift
-//  FrameworkTests
+//  Test.swift
+//  Test
 //
-//  Created by Anil Kothari on 04/10/15.
+//  Created by Anil Kothari on 15/11/15.
 //  Copyright © 2015 Rakesh Kothari. All rights reserved.
 //
 
 import XCTest
-@testable import Framework
 
-class FrameworkTests: XCTestCase {
+class Test: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -32,11 +31,5 @@ class FrameworkTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
-    
-   
-    
-    
-    
     
 }

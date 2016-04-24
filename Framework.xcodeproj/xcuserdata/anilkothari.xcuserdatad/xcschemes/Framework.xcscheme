@@ -48,6 +48,26 @@
                ReferencedContainer = "container:Framework.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "46A80AA61BF8E32F00EC704D"
+               BuildableName = "Test.xctest"
+               BlueprintName = "Test"
+               ReferencedContainer = "container:Framework.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "465FCA5B1BF8E9EF0079D995"
+               BuildableName = "Testing.xctest"
+               BlueprintName = "Testing"
+               ReferencedContainer = "container:Framework.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

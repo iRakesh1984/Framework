@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,OS_dispatch_object {
 
     
     @IBOutlet weak var tableView: UITableView!
@@ -19,19 +19,31 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet weak var loaderView: LoaderView!
     @IBOutlet weak var starView: StarView!
 
+    @IBOutlet weak var timer: Timer!
+    
+    var timerValue: CGFloat!
+
     override func viewDidLoad(){
         super.viewDidLoad()
-        
+        timerValue = 0;
  
-        
-        
+         NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "animateTimer", userInfo: nil, repeats: true) //3
+    }
+    
+    func animateTimer(){
+        timerValue = timerValue + 1/30;
+        print(timerValue)
+        timer.progress = 3;
+        timer.rotate()
         
     }
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
-        radialProgressView.rotate()
-        loaderView.rotate()
         
-        starView.rating = 3
+
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+//        radialProgressView.rotate()
+//        loaderView.rotate()
+        
+//        starView.rating = 3
     }
 
     func `repeat`(i : Int , task:() -> Bool) {
